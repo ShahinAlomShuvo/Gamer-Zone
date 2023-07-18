@@ -1,0 +1,113 @@
+/* imported font  */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&display=swap");
+
+/* css variable  */
+
+:root {
+  --primaryColor: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+  --linearColor: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  --btnColor: #4ec5f7;
+  --descTextColor: #534c64;
+  --titleTextColor: #0b0223;
+  --colorWhite: #fff;
+  --navColor: #3c354f;
+  --navBackground: rgba(11, 2, 35, 0.1);
+  --primaryBackground: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+}
+
+/* universal style  */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* body style  */
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+/* common style  */
+.container {
+  max-width: 1140px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
+
+.primaryColor {
+  background: var(--primaryColor);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.titleColor {
+  background: var(--titleTextColor);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* nav related style  */
+
+.navBarWrapper {
+  background: var(--colorWhite);
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0px;
+}
+.brand {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.brandTitle {
+  font-size: 2.2rem;
+}
+
+.brand img {
+  width: 50px;
+}
+
+.navItems ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+}
+.navItems ul li {
+  color: var(--navColor);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.navItems ul li a {
+  text-decoration: none;
+  color: var(--navColor);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.followUs {
+  background: var(--navBackground);
+  padding: 15px 25px;
+  border-radius: 5px;
+  display: flex;
+  gap: 10px;
+}
+
+.followUs .youtubeIcon {
+  color: #f00044;
+}
+.followUs .tiktokIcon {
+  color: #000000;
+}
