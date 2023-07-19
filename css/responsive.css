@@ -4,9 +4,20 @@
   .nav,
   .navItems ul {
     flex-direction: column;
+    gap: 25px;
   }
 
-  .navItems ul {
-    margin-top: 10px;
+  .bannerContainer {
+    flex-direction: column-reverse;
+    gap: 25px;
+  }
+}
+
+/* tablet responsive style  */
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .bannerContainer {
+    flex-direction: column-reverse;
+    gap: 50px;
   }
 }

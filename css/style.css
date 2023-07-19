@@ -26,10 +26,14 @@
   padding: 0;
 }
 
-/* body style  */
+/* elements selector style  */
 
 body {
   font-family: "Work Sans", sans-serif;
+}
+
+section {
+  padding: 2rem 0;
 }
 
 /* common style  */
@@ -46,12 +50,45 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.linearColor {
+  background: var(--linearColor);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .titleColor {
   background: var(--titleTextColor);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.descTextColor {
+  background: var(--descTextColor);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.primaryBtn {
+  border: none;
+  outline: none;
+  background: var(--primaryColor);
+  color: var(--colorWhite);
+  padding: 20px 40px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.secoundaryBtn {
+  border: none;
+  outline: none;
+  background: var(--btnColor);
+  color: var(--colorWhite);
+  padding: 20px 40px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+}
 /* nav related style  */
 
 .navBarWrapper {
@@ -110,4 +147,62 @@ body {
 }
 .followUs .tiktokIcon {
   color: #000000;
+}
+
+/* banner section related style  */
+
+.bannerWrapper {
+  background: var(--primaryBackground);
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+}
+
+.bannerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bannerContent h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.bannerContent h1 {
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+.bannerItemList {
+  list-style: none;
+}
+.bannerItemList li {
+  margin-top: 15px;
+}
+
+.playIcon {
+  border: 1px solid #0b0223;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 0.5rem;
+}
+
+.playIcon,
+.downloadIcon,
+.userIcon {
+  margin-right: 10px;
+}
+
+.bannerBtn {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.bannerImg {
+  max-width: 500px;
+}
+.bannerImg img {
+  width: 100%;
+  /* height: 100%; */
 }
