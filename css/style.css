@@ -11,6 +11,7 @@
   --titleTextColor: #0b0223;
   --colorWhite: #fff;
   --navColor: #3c354f;
+  --footerTextColor: rgba(255, 255, 255, 0.6);
   --navBackground: rgba(11, 2, 35, 0.1);
   --primaryBackground: linear-gradient(
     223deg,
@@ -65,12 +66,22 @@ section {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.colorWhite {
+  background: var(--colorWhite);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footerTextColor {
+  background: var(--footerTextColor);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .descTextColor {
   background: var(--descTextColor);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.2rem;
 }
 
@@ -354,6 +365,8 @@ section {
   left: -20%;
 }
 
+/* topGame related style  */
+
 .topGame {
   display: flex;
   justify-content: space-around;
@@ -388,4 +401,84 @@ section {
 .topGameItems p {
   font-weight: 600;
   font-size: 0.9rem;
+}
+
+/* footer related style  */
+
+.footer {
+  background: #000000;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.footerContainer {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.footerBrand {
+  display: flex;
+  justify-content: center;
+}
+.footerList ul {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  list-style: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 30px 0px;
+}
+
+.footerIcon {
+  display: flex;
+  justify-content: center;
+}
+
+.footerIcon ul {
+  display: grid;
+  grid-template-columns: repeat(6, 5rem);
+  list-style: none;
+  font-weight: 600;
+  font-size: 2.5rem;
+  padding: 30px 0px;
+}
+
+.footerIcon ul li a {
+  text-decoration: none;
+}
+
+.footerIcon ul li:first-child a i {
+  color: #1da1f2;
+}
+.footerIcon ul li:nth-child(2) a i {
+  color: #1877f2;
+}
+.footerIcon ul li:nth-child(3) a i {
+  color: #ff0000;
+}
+.footerIcon ul li:nth-child(4) a i {
+  color: #0a66c2;
+}
+.footerIcon ul li:nth-child(5) a i {
+  color: #e4405f;
+}
+.footerIcon ul li:last-child a i {
+  color: #ffffff;
+}
+
+.footerTerms {
+  display: flex;
+  justify-content: center;
+}
+.footerTerms ul {
+  display: grid;
+  grid-template-columns: repeat(4, 9rem);
+  list-style: none;
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 30px 0px;
+}
+.copyRightText {
+  font-weight: 600;
+  font-size: 1.1rem;
 }

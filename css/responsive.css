@@ -23,12 +23,42 @@
     gap: 20px;
   }
 
+  /* topGame Responsive */
+
   .topGame {
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 0px 40px;
-    line-height: normal;
-    justify-content: left;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .topGameItems img {
+    width: 40%;
+  }
+  .topGameItems p {
+    font-weight: 400;
+    font-size: 0.7rem;
+  }
+
+  /* footer Responsive */
+
+  .footerContainer {
+    max-width: 100%;
+  }
+
+  .footerList ul {
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 1.1rem;
+    gap: 20px;
+  }
+
+  .footerIcon ul {
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 3rem;
+    gap: 40px;
+  }
+
+  .footerTerms ul {
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 1.1rem;
+    gap: 20px;
   }
 }
 
@@ -52,9 +82,43 @@
     gap: 20px;
   }
 
+  /* topGame Responsive */
+
   .topGame {
     gap: 20px;
     padding: 0px 40px;
-    justify-content: left;
+    justify-content: center;
+  }
+
+  .topGameItems img {
+    width: 50%;
+  }
+  .topGameItems p {
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+
+  /* footer Responsive */
+
+  .footerContainer {
+    max-width: 100%;
+  }
+
+  .footerList ul {
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 1.1rem;
+    gap: 20px;
+  }
+
+  .footerIcon ul {
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 3rem;
+    gap: 40px;
+  }
+
+  .footerTerms ul {
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 1.1rem;
+    gap: 20px;
   }
 }
