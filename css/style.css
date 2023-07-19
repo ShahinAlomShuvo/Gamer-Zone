@@ -430,18 +430,25 @@ section {
   left: -10px;
   right: -10px;
   bottom: -10px;
-  border: 2px solid green;
+  border: 2px solid #ff42a5;
   border-radius: 50px;
   opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .topGameItems:hover::before {
   opacity: 1;
 }
 
+.topGameItems:hover p {
+  color: #ff42a5;
+}
+
 .topGameItems p {
   font-weight: 600;
   font-size: 0.9rem;
+  color: #534c64;
+  transition: 0.3s;
 }
 
 /* footer related style  */

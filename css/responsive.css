@@ -38,7 +38,7 @@
   }
 
   .playInstantlyImages {
-    margin-left: 50px;
+    margin-left: 90px;
   }
 
   .playInstantlyImages img {
@@ -51,7 +51,7 @@
   }
 
   .talkingImg img {
-    max-width: 50%;
+    max-width: 45%;
   }
 
   /* topGame Responsive */
@@ -168,11 +168,11 @@
   }
 
   .playInstantlyImages {
-    margin-left: 50px;
+    margin-left: 120px;
   }
 
   .playInstantlyImages img {
-    max-width: 80%;
+    max-width: 70%;
   }
 
   .talkingImg {
