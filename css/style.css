@@ -353,3 +353,39 @@ section {
   color: #fff;
   left: -20%;
 }
+
+.topGame {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.topGameItems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.topGameItems::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 2px solid green;
+  border-radius: 50px;
+  opacity: 0;
+}
+
+.topGameItems:hover::before {
+  opacity: 1;
+}
+
+.topGameItems p {
+  font-weight: 600;
+  font-size: 0.9rem;
+}

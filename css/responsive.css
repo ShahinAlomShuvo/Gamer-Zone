@@ -22,6 +22,14 @@
     justify-content: center;
     gap: 20px;
   }
+
+  .topGame {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0px 40px;
+    line-height: normal;
+    justify-content: left;
+  }
 }
 
 /* tablet responsive style  */
@@ -42,5 +50,11 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+  }
+
+  .topGame {
+    gap: 20px;
+    padding: 0px 40px;
+    justify-content: left;
   }
 }
