@@ -16,6 +16,12 @@
   .teamDesc {
     text-align: center;
   }
+
+  .onlineGameCards {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
 }
 
 /* tablet responsive style  */
@@ -31,5 +37,10 @@
   .teamDesc {
     margin: auto;
     text-align: center;
+  }
+  .onlineGameCards {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
   }
 }

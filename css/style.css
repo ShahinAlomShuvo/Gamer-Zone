@@ -1,5 +1,5 @@
 /* imported font  */
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap");
 
 /* css variable  */
 
@@ -38,7 +38,7 @@ body {
 }
 
 section {
-  padding: 2rem 0;
+  padding: 3.5rem 0;
 }
 
 /* common style  */
@@ -249,4 +249,107 @@ section {
 .ourPurpose small {
   font-size: 1.2rem;
   font-weight: 600;
+}
+
+/* onlineGame related style  */
+
+.onlineGameHeader {
+  text-align: center;
+}
+
+.onlineGameHeader h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.onlineGameHeader p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.onlineGameCards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.card {
+  width: 250px;
+  position: relative;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 86%;
+  border-radius: 8px;
+  background-color: #000000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 96%;
+  height: 84%;
+  border-radius: 13px;
+  border: 5px solid #f948b2;
+  opacity: 0;
+}
+
+.card:hover::before {
+  opacity: 0.5;
+}
+.card:hover::after {
+  opacity: 1;
+}
+
+.card:hover .cardIcon {
+  opacity: 1;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+.card img {
+  max-width: 100%;
+  height: 86%;
+}
+
+.card p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.playBtn {
+  color: black;
+  font-size: 20px;
+  border-radius: 50%;
+  padding: 10px;
+  background: var(--colorWhite);
+  box-shadow: 0px 4px 30px 0px rgba(255, 255, 255, 0.05);
+  border: none;
+  outline: none;
+}
+
+.cardIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  text-align: center;
+}
+
+.cardIcon p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  left: -20%;
 }
