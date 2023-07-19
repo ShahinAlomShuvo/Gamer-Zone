@@ -23,6 +23,37 @@
     gap: 20px;
   }
 
+  /* playInstantly  responsive*/
+
+  .playInstantlyContainer {
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  .playInstantlyDesc {
+    text-align: center;
+  }
+  .playInstantlyDesc p {
+    padding-left: 0;
+  }
+
+  .playInstantlyImages {
+    margin-left: 50px;
+  }
+
+  .playInstantlyImages img {
+    max-width: 80%;
+  }
+
+  .talkingImg {
+    left: -60px;
+    bottom: -60px;
+  }
+
+  .talkingImg img {
+    max-width: 50%;
+  }
+
   /* topGame Responsive */
 
   .topGame {
@@ -120,5 +151,36 @@
     grid-template-columns: repeat(2, 1fr);
     font-size: 1.1rem;
     gap: 20px;
+  }
+
+  /* playInstantly responsive */
+
+  .playInstantlyContainer {
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  .playInstantlyDesc {
+    text-align: center;
+  }
+  .playInstantlyDesc p {
+    padding-left: 0;
+  }
+
+  .playInstantlyImages {
+    margin-left: 50px;
+  }
+
+  .playInstantlyImages img {
+    max-width: 80%;
+  }
+
+  .talkingImg {
+    left: -80px;
+    bottom: -60px;
+  }
+
+  .talkingImg img {
+    max-width: 60%;
   }
 }

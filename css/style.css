@@ -365,6 +365,47 @@ section {
   left: -20%;
 }
 
+/* playInstantly section related style  */
+
+.playInstantlyContainer {
+  display: flex;
+  gap: 180px;
+  align-items: center;
+}
+
+.playInstantlyDesc {
+  text-align: right;
+  max-width: 430px;
+}
+.playInstantlyDesc h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.playInstantlyDesc p {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 20px 0px;
+  padding-left: 85px;
+  line-height: 1.6rem;
+}
+
+.playInstantlyImages img {
+  max-width: 100%;
+}
+.checkImage {
+  position: relative;
+}
+
+.talkingImg {
+  position: absolute;
+  left: -100px;
+  bottom: -60px;
+}
+.talkingImg img {
+  max-width: 70%;
+}
+
 /* topGame related style  */
 
 .topGame {
