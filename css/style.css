@@ -169,6 +169,9 @@ section {
 
 .bannerWrapper {
   background: var(--primaryBackground);
+  background-image: url("../images/bannerBackground.png");
+  background-repeat: no-repeat;
+  background-position: left top;
   padding-top: 8rem;
   padding-bottom: 2rem;
 }

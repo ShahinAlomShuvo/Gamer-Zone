@@ -13,6 +13,10 @@
     gap: 25px;
   }
 
+  .bannerWrapper {
+    background-position: left bottom;
+  }
+
   .teamDesc {
     text-align: center;
   }
