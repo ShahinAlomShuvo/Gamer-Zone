@@ -78,6 +78,30 @@
     font-weight: 0.8rem;
   }
 
+  /* career Section responsive  */
+
+  .careersContainer {
+    flex-direction: column;
+  }
+
+  .careerInfoContainer {
+    padding: 20px;
+  }
+
+  .careersDesc p {
+    font-size: 0.8rem;
+    font-weight: 400;
+    max-width: 100%;
+  }
+
+  .careerInfo ul {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  .careersImg {
+    padding: 50px 20px;
+  }
   /* topGame Responsive */
 
   .topGame {
@@ -189,6 +213,28 @@
 
   .playGameDesc p {
     font-weight: 0.8rem;
+  }
+
+  /* career Section responsive  */
+
+  .careersContainer {
+    flex-direction: column;
+  }
+
+  .careerInfoContainer {
+    padding: 20px;
+  }
+
+  .careersDesc p {
+    font-size: 0.9rem;
+  }
+
+  .careerInfo ul {
+    font-size: 1rem;
+  }
+
+  .careersImg {
+    padding: 50px 40px;
   }
 
   /* topGame Responsive */
