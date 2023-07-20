@@ -1,6 +1,7 @@
 /* mobile responsive style  */
 
 @media screen and (max-width: 576px) {
+  /* nav,banner,team & online game section responsive  */
   .nav,
   .navItems ul,
   .teamContainer {
@@ -27,35 +28,54 @@
     gap: 20px;
   }
 
-  /* playInstantly  responsive*/
+  /* playInstantly & playGame  responsive*/
 
   .playInstantlyContainer {
     flex-direction: column;
-    gap: 80px;
+    gap: 40px;
   }
 
-  .playInstantlyDesc {
-    text-align: center;
-  }
-  .playInstantlyDesc p {
-    padding-left: 0;
+  .playGameContainer {
+    flex-direction: column-reverse;
+    gap: 40px;
   }
 
-  .playInstantlyImages {
-    margin-left: 90px;
-  }
-
-  .playInstantlyImages img {
-    max-width: 80%;
+  .playInstantlyImages img,
+  .playGameImages img {
+    max-width: 260px;
   }
 
   .talkingImg {
-    left: -60px;
-    bottom: -60px;
+    left: 12px;
+    bottom: -30px;
   }
 
-  .talkingImg img {
-    max-width: 45%;
+  .overlayImage {
+    right: 12px;
+    bottom: -30px;
+  }
+
+  .talkingImg img,
+  .overlayImage img {
+    max-width: 120px;
+  }
+
+  .playGameImages,
+  .playGameDesc,
+  .playInstantlyDesc,
+  .playInstantlyImages {
+    width: 400px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .playInstantlyDesc p {
+    margin: auto;
+    width: 100%;
+  }
+
+  .playGameDesc p {
+    font-weight: 0.8rem;
   }
 
   /* topGame Responsive */
@@ -100,9 +120,13 @@
 /* tablet responsive style  */
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
+  /* nav,banner,team & online game section responsive  */
   .bannerContainer {
     flex-direction: column-reverse;
     gap: 50px;
+  }
+  .bannerWrapper {
+    background-position: left bottom;
   }
   .teamContainer {
     flex-direction: column;
@@ -117,12 +141,62 @@
     gap: 20px;
   }
 
+  /* playInstantly & playGame responsive */
+
+  .playInstantlyContainer {
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  .playGameContainer {
+    flex-direction: column-reverse;
+    gap: 80px;
+  }
+
+  .playInstantlyImages img,
+  .playGameImages img {
+    max-width: 450px;
+  }
+
+  .talkingImg img,
+  .overlayImage img {
+    max-width: 180px;
+  }
+
+  .talkingImg {
+    left: 10px;
+    bottom: -50px;
+  }
+
+  .overlayImage {
+    right: 10px;
+    bottom: -50px;
+  }
+
+  .playGameImages,
+  .playGameDesc,
+  .playInstantlyDesc,
+  .playInstantlyImages {
+    width: 650px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .playInstantlyDesc p {
+    margin: auto;
+    width: 100%;
+  }
+
+  .playGameDesc p {
+    font-weight: 0.8rem;
+  }
+
   /* topGame Responsive */
 
   .topGame {
     gap: 20px;
     padding: 0px 40px;
-    justify-content: center;
+    justify-content: left;
   }
 
   .topGameItems img {
@@ -155,36 +229,5 @@
     grid-template-columns: repeat(2, 1fr);
     font-size: 1.1rem;
     gap: 20px;
-  }
-
-  /* playInstantly responsive */
-
-  .playInstantlyContainer {
-    flex-direction: column;
-    gap: 80px;
-  }
-
-  .playInstantlyDesc {
-    text-align: center;
-  }
-  .playInstantlyDesc p {
-    padding-left: 0;
-  }
-
-  .playInstantlyImages {
-    margin-left: 120px;
-  }
-
-  .playInstantlyImages img {
-    max-width: 70%;
-  }
-
-  .talkingImg {
-    left: -80px;
-    bottom: -60px;
-  }
-
-  .talkingImg img {
-    max-width: 60%;
   }
 }

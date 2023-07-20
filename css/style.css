@@ -372,13 +372,13 @@ section {
 
 .playInstantlyContainer {
   display: flex;
-  gap: 180px;
+  justify-content: space-between;
   align-items: center;
+  gap: 170px;
 }
 
 .playInstantlyDesc {
   text-align: right;
-  max-width: 430px;
 }
 .playInstantlyDesc h2 {
   font-size: 2.5rem;
@@ -389,26 +389,63 @@ section {
   font-size: 1rem;
   font-weight: 500;
   padding: 20px 0px;
-  padding-left: 85px;
+  width: 340px;
   line-height: 1.6rem;
 }
 
 .playInstantlyImages img {
-  max-width: 100%;
+  max-width: 550px;
 }
-.checkImage {
+.talkingImg img {
+  max-width: 220px;
+}
+.playInstantlyImageWrapper {
   position: relative;
 }
 
 .talkingImg {
   position: absolute;
   left: -100px;
-  bottom: -60px;
-}
-.talkingImg img {
-  max-width: 70%;
+  bottom: -80px;
 }
 
+/* play Game related style  */
+
+.playGameContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 170px;
+}
+
+.playGameImages img {
+  max-width: 550px;
+}
+
+.overlayImage img {
+  max-width: 220px;
+}
+
+.playGameImageWrapper {
+  position: relative;
+}
+
+.overlayImage {
+  position: absolute;
+  right: -100px;
+  bottom: -80px;
+}
+
+.playGameDesc h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.playGameDesc p {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 20px 0px;
+  line-height: 1.6rem;
+}
 /* topGame related style  */
 
 .topGame {
